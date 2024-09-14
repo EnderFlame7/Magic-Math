@@ -1,0 +1,63 @@
+<!-- 
+    Name:   Tej Singh and Leo Yudelson
+    Date:   5 / 8 / 2023
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    
+        <meta charset="UTF-8">                       <!-- Declares the character encloding -->
+        <title>Magic Math</title>                    <!-- Titles the webpage "Magic Math" -->
+        <link rel="stylesheet" href="magicmath.css"> <!-- Refers to the magicmath.css stylesheet for styling -->
+        <script src="magicmath.js"></script>         <!-- Refers to the magicmath.js javascript for functionality -->
+        
+    </head>
+    
+    <body>
+    
+        <!-- Header with game title -->
+        <h1>Magic Math</h1>
+        
+        <p id="goal">Goal:</p>      <!-- Displays the goal -->
+        <p id="wins">Wins: 0</p>    <!-- Win counter -->
+        <p id="loses">Losses: 0</p> <!-- Loss counter -->
+
+        <!-- Number buttons -->
+        <div id="numbers">
+            <button></button> <!-- Top left button -->
+            <button></button> <!-- Top right button -->
+            <button></button> <!-- Bottom left button -->
+            <button></button> <!-- Bottom right button -->
+        </div>
+        
+        <!-- Operator buttons -->
+        <div id="operators">
+            <button id="+">+</button> <!-- Addition button -->
+            <button id="-">-</button> <!-- Subtraction button -->
+            <button id="*">*</button> <!-- Multiplication button -->
+        </div>
+        
+        <!-- Work Area -->
+        <div id="workArea">
+            <p id="workAreaLabel"><strong>Your Work</strong></p> <!-- Work Area Label -->
+            <p id="formulas"></p>                                <!-- Users work displayed here -->
+            <p id="solutionLabel"><strong>Solution</strong></p>  <!-- Solution Label -->
+            <p id="solution"></p>                                <!-- Solution displayed here -->
+        </div>
+
+        <p id="gamePrompt"></p> <!-- Game prompt displayed here -->
+        
+        <button id="newGameButton">New game</button> <!-- New game button -->
+        <button id="resetButton">Reset</button>      <!-- Reset button -->
+        
+        <footer>
+    
+        <p>&copy; Tej Singh & Leo Yudelson - 5 / 8 / 2023 v1.0.5</p> <!-- Footer contains names, date, and version -->
+        
+        </footer>
+        
+    </body>
+    
+</html>

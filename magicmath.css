@@ -1,0 +1,257 @@
+/******************************************************************************************************************************
+
+ ** Name:   Tej Singh and Leo Yudelson
+ ** Date:   5 / 8 / 2023
+ 
+******************************************************************************************************************************/
+
+/* Defines the style of the body tag in the index.html file */
+body {
+
+    position: fixed;
+    top: 175px;
+    left: 100px;
+    margin: 5px;
+    text-color: blue;
+    font-family: arial;
+}
+
+/* Orange header at the top that contains the title of the game */
+h1 {
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0px 0px 0px;
+    padding: 35px;
+    background-color: rgb(255, 87, 54);
+    color: white;
+    font-size: 36pt;
+}
+
+/* Orange footer at the bottom that contains names, date, and version */
+footer {
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0px 0px 0px;
+    padding: 15px;
+    background-color: rgb(255, 87, 54);
+    color: white;
+    font-size: 24pt;
+}
+
+/* Goal counter above the grid of number buttons */
+#goal {
+
+    position: fixed;
+    top: 125px;
+    left: 100px;
+    color: black;
+    font-size: 18pt;
+}
+
+/* Win counter above the work area and next to the loss counter */
+#wins {
+
+    position: fixed;
+    top: 125px;
+    left: 620px;
+    color: black;
+    font-size: 18pt;
+}
+
+/* Loss counter above the work area and next to the win counter */
+#loses {
+
+    position: fixed;
+    top: 125px;
+    left: 755px;
+    color: black;
+    font-size: 18pt;
+}
+
+/* Game prompt uner the grid of number buttons */
+#gamePrompt {
+
+    position: fixed;
+    top: 540px;
+    left: 100px;
+    color: black;
+    font-size: 18pt;
+}
+
+/* New game button located under the grid of number buttons and next to the reset button */
+#newGameButton {
+
+    position: fixed;
+    top: 615px;
+    left: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(41, 123, 255);
+    color: white;
+    font-size: 12pt;
+}
+
+/* Changes the new game button's look when mouse hover */
+#newGameButton:hover {
+
+    background-color: rgb(92, 154, 255);
+    cursor: pointer;
+}
+
+/* Reset game button located under the grid of number buttons and next to the new game button */
+#resetButton {
+
+    position: fixed;
+    top: 615px;
+    left: 250px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(41, 123, 255);
+    color: white;
+    font-size: 12pt;
+}
+
+/* Changes the reset button's look when mouse hover */
+#resetButton:hover {
+
+    background-color: rgb(92, 154, 255);
+    cursor: pointer;
+}
+
+/* The grid in which the number buttons are located */
+#numbers {
+
+    position: fixed;
+    top: 185px;
+    left: 100px;
+    font: 150px arial;
+    margin: 3px;
+
+    display: grid;
+    grid-template-columns: 175px 175px;
+    grid-template-rows: 175px 175px;
+    grid-gap: 10px;
+}
+
+/* The number buttons themselves */
+#numbers > button {
+
+    display: flex;
+    justify-content: center;
+    border: 3px solid rgb(255, 87, 54);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 100%;
+    font-family: inherit;
+}
+
+/* Changes the number button's look when mouse hover */
+#numbers > button:hover {
+
+    background-color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+
+/* Changes the number button's look when it is disabled */
+#numbers > button[disabled="true"] {
+
+    background-color: rgb(214, 214, 214);
+    cursor: auto;
+}
+
+/* The area in which the operator buttons are located */
+#operators {
+
+    position: fixed;
+    top: 240px;
+    left: 500px;
+    font: 64px arial;
+    margin: 3px;
+
+    display: grid;
+    grid-template-columns: 75px;
+    grid-template-rows: 75px 75px 75px;
+    grid-gap: 10px;
+}
+
+/* The operator buttons themselves */
+#operators > button {
+
+   border: 3px solid rgb(255, 87, 54);
+   border-radius: 10px;
+   text-align: center;
+   font-size: 100%;
+   font-family: inherit;
+}
+
+/* Changes the operator button's look when mouse hover */
+#operators > button:hover {
+
+    background-color: rgb(214, 214, 214);
+    cursor: pointer;
+}
+
+/* Changes the operator button's look when it is disabled */
+#operators > button[disabled="true"] {
+
+    background-color: rgb(214, 214, 214);
+    cursor: auto;
+}
+
+/* The area that displays the user's work located to the right of the operator buttons */
+#workArea {
+
+    position: fixed;
+    top: 189px;
+    left: 620px;
+    width: 350px;
+    height: 353px;
+    border: 3px solid rgb(255, 87, 54);
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 36pt;
+}
+
+/* The blue text inside the work area that lables it "Your Work" */
+#workAreaLabel {
+
+    color: rgb(41, 123, 255);
+    font-size: 18pt;
+    text-align: center
+}
+
+/* The fomulas that the user enters via the number and operator buttons */
+#formulas {
+
+    color: black;
+    font-size: 24pt;
+    text-align: center
+}
+
+/* The blue text under the "Your work" label in the work area */
+#solutionLabel {
+
+    position: fixed;
+    top: 365px;
+    left: 750px;
+    color: rgb(41, 123, 255);
+    font-size: 18pt;
+    text-align: center
+}
+
+/* The solution located under the "Solution" label in the work area */
+#solution {
+
+    color: green;
+    font-size: 24pt;
+    text-align: center
+}
